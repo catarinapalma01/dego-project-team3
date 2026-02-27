@@ -4,7 +4,7 @@
 - [ Catarina Palma; Mariana Almeida ]
 
 ## Project Description
-Credit scoring bias analysis for DEGO course .
+Credit scoring bias analysis for DEGO course.
 
 ## Structure
 - ‘data/‘ - Dataset files
