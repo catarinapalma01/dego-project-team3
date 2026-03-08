@@ -1,7 +1,7 @@
 # DEGO Project - Team 3
 
 # # Team Members
-- [ Catarina Palma; Mariana Almeida; León Fischer ]
+- [ Catarina Palma; Mariana Almeida ]
 
 ## Project Description
 Credit scoring bias analysis for DEGO course.
