@@ -68,7 +68,7 @@ project-team3/
 
 The raw dataset contains **502 records × 21 columns** in a nested JSON format. After cleaning, the final dataset is **500 rows × 20 columns**. All expected schema fields were present at load time.
 
-### 1.2 Issues Identified: 16 Total
+### 1.2 Issues Identified: 15 Total
 
 We assessed quality across four dimensions: **Accuracy, Completeness, Consistency, and Validity**.
 
@@ -86,14 +86,13 @@ The SSN duplicates are particularly concerning: some appear across records with 
 | Field | Missing Count | Missing % | Notes |
 |---|---|---|---|
 | `notes` | 500 / 502 | 99.60% | Only populated for duplicate records — dropped |
-| `financials.annual_salary` | 497 / 502 | 99.00% | Redundant column — dropped |
 | `loan_purpose` | 452 / 502 | 90.04% | Retained — analytically valuable |
 | `processing_timestamp` | 440 / 502 | 87.65% | Retained — audit trail when present |
 | Blank strings (email, DOB, gender, ZIP) | 14 total | — | Converted to `NaN` |
 
 The near-total absence of `loan_purpose` and `processing_timestamp` makes **purpose-limitation compliance** (GDPR Art. 5(1)(b)) and **audit trails** impossible to enforce.
 
-#### Consistency (5 issues)
+#### Consistency (4 issues)
 
 | Issue | Count | % | Remediation |
 |---|---|---|---|
@@ -112,7 +111,7 @@ Date-of-birth inconsistency was the most structurally significant: 20% of record
 | `credit_history_months` < 0 | 2 | 0.40% | Set to `NaN` |
 | `debt_to_income` > 1 | 1 | 0.20% | Set to `NaN` |
 | `savings_balance` < 0 | 1 | 0.20% | Set to `NaN` |
-| Invalid ZIP code format | 1 | 0.20% | Set to `NaN` (was blank string) |
+| Future timestamps | 2 | 0.40% | Set to `NaN` |
 | Invalid email format | 4 | 0.80% | Set to `NaN` |
 
 `interest_rate` values above 1.0 were initially flagged but confirmed to be stored in **percentage points** (range: 2.5–6.5%) — not a validity error.
