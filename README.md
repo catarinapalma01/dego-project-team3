@@ -4,7 +4,7 @@
 MSc Business Analytics  Nova SBE 2026
 
 **Team Members**
-Team 3: Catarina Palma; Mariana Almeida; León Fischer; Catarina Silva
+Team 3: Catarina Palma; Mariana Almeida; León Fischer; Maria Silva
  
 ---
 
@@ -359,6 +359,9 @@ Run the notebooks in sequence — each notebook saves an output file used by the
 ```
 
 All notebooks are self-contained and runnable from the `notebooks/` directory. The path resolution logic handles both cases (running from repo root or from within `notebooks/`).
+
+### Link for the presentation video
+https://youtu.be/96akD78Yahk
 
 ---
 
