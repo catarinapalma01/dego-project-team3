@@ -16,7 +16,7 @@ NovaCred is a fintech startup that uses machine learning to make credit decision
 
 | Finding | Verdict |
 |---|---|
-| Data quality | **16 issues** identified across all 4 dimensions; all remediated |
+| Data quality | **15 issues** identified across all 4 dimensions; all remediated |
 | Gender bias | **Direct discrimination confirmed**: AIR = 0.767, p < 0.001 |
 | Age bias | **Indirect discrimination confirmed**: AIR = 0.616 via credit history proxy |
 | Intersectional bias | **Severe**: Young female applicants AIR = 0.464, p = 0.0004 |
