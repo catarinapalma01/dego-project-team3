@@ -365,7 +365,7 @@ https://youtu.be/96akD78Yahk
 
 ---
 
-## 7. References
+## 8. References
 
 - GDPR (EU) 2016/679 — https://gdpr.eu/
 - EU AI Act (EU) 2024/1689 — https://artificialintelligenceact.eu/
